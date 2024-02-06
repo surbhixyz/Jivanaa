@@ -1,11 +1,31 @@
-import React from "react";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../style.css'
+const App = () => {
+  return (
+    <div>
 
-function App(){
+      <div className='homepage'>
+        <img src='/Shape.svg' ></img>
+      </div>
 
-    return <div>
-        <h1>Hello World !</h1>
+      <div className='right-buttons'>
+        <Link to="/login">
+          <button className='login'>Login</button>
+        </Link>
+        <Link to="/signup">
+          <button className='signup'>Sign Up</button>
+        </Link>
+      </div>
+
+      <div className='content'>
+        <h1>Jivanaa</h1>
+        <p>Fostering Universal Reproductive Health & Elevating Sex Education</p>
+      </div>
+
     </div>
-    
-}
+
+  );
+};
 
 export default App;
