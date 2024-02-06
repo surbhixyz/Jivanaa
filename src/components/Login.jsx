@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../components/Login.css';
 import Home from './Home.jsx'; 
 import { toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [formData, setFormData] = useState({ "Email": "", "password": "" });
@@ -59,7 +60,7 @@ const Login = () => {
       </form>
       <br></br>
 
-      <button onClick={submitHandler}>Submit</button>
+      <button onClick={submitHandler}>  <Link to="/home">Submit</Link></button>
 
       <div className='bottomrow'>
           <p>- Or sign in with - </p>
