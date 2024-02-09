@@ -1,0 +1,59 @@
+body{
+    overflow: hidden;
+}
+
+.chatbot-icon {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.chatbot-icon img{
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+}
+
+.row-container{
+
+    position: absolute;
+    left: 5.5%;
+    width: 100vw;
+}
+
+.row1, .row2{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    margin: 3%;
+    flex-wrap: wrap;
+    
+}
+
+
+.row1 img, .row2 img {
+
+    height: 230px;
+    width: 400px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+
+    .row1 img, .row2 img {
+        margin: 1%;
+    }
+
+    .row-container{
+
+        position: absolute;
+        left: 17%;
+    }
+
+}

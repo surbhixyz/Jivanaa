@@ -64,7 +64,7 @@ const Login = () => {
 
       <div className='bottomrow'>
           <p>- Or sign in with - </p>
-          <img src='../Google - Original.svg' alt="Google Logo"></img>
+          <img src='../images/Google - Original.svg' alt="Google Logo"></img>
       </div>
     </div>
   );
