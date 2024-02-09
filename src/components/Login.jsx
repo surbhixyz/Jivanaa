@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../components/Login.css';
 import Home from './Home.jsx';
 import { toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [formData, setFormData] = useState({ "Email": "", "password": "" });
@@ -37,7 +38,7 @@ const Login = () => {
   return (
     <div className='loginform'>
       <div className='topbuttons'>
-        <button id='signin'>SIGN UP</button>
+      <Link to="/signup"><button id='signin'>SIGN UP</button></Link>
         <button id='signup' onClick={submitHandler}>SIGN IN</button>
       </div>
 

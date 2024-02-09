@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import '../components/SignUp.css';
 import Login from './Login.jsx';
 import { toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
 
 const SignUp = () => {
 
@@ -46,7 +47,7 @@ const SignUp = () => {
     <div className='loginform'>
       <div className='topbuttons'>
         <button id='signup'>SIGN UP</button>
-        <button id='signin'>SIGN IN</button>
+        <Link to="/login"><button id='signin'>SIGN IN</button></Link>
       </div>
 
       <form onSubmit={submitHandler}>
