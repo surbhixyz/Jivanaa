@@ -1,13 +1,14 @@
 
 import React, { useState } from 'react';
 import '../components/SignUp.css';
-import Login from './Login.jsx'; 
+import Login from './Login.jsx';
 import { toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
 
 const SignUp = () => {
 
   const [formData, setFormData] = useState({ "Email": "", "password": "", "confirmPassword": "" })
-  const [matched, setIsMatched] = useState(false);  
+  const [matched, setIsMatched] = useState(false);
 
   function changeHandler(event) {
     const { name, value } = event.target;
@@ -21,30 +22,37 @@ const SignUp = () => {
 
   function submitHandler(event) {
     event.preventDefault();
-    if(formData.password===formData.confirmPassword){
-      setIsMatched(true)
-      toast.success("Signed In Successfully")
+  
+    // Validate email, password, and confirmPassword
+    if (!formData.Email || !formData.password || !formData.confirmPassword) {
+      toast.error("Please fill in all the fields.");
+      return;
     }
-    else{
-      toast.error("Passwords do not match.")
+  
+    if (formData.password !== formData.confirmPassword) {
+      toast.error("Passwords do not match.");
+      return;
     }
-    
+  
+    // If validation passes, set matched to true and show success message
+    setIsMatched(true);
+    toast.success("Signed In Successfully");
   }
 
   if (matched) {
-    return <Login/>;
+    return <Login />;
   }
 
   return (
     <div className='loginform'>
       <div className='topbuttons'>
-        <button>Sign Up</button>
-        <button>Sign In</button>
+        <button id='signup'>SIGN UP</button>
+        <Link to="/login"><button id='signin'>SIGN IN</button></Link>
       </div>
 
       <form onSubmit={submitHandler}>
         <label htmlFor='Email'>Email</label>
-        <br></br>
+
         <input
           type="text"
           placeholder='Enter Email'
@@ -53,9 +61,9 @@ const SignUp = () => {
           value={formData.Email}
         />
 
-        <br></br>
+
         <label htmlFor='password'>Password</label>
-        <br></br>
+
         <input
           type="password"
           placeholder='Enter Password'
@@ -64,9 +72,9 @@ const SignUp = () => {
           value={formData.password}
         />
 
-        <br></br>
+
         <label htmlFor='password'>Confirm Password</label>
-        <br></br>
+
         <input
           type="password"
           placeholder='Confirm Password'
@@ -75,13 +83,15 @@ const SignUp = () => {
           value={formData.confirmPassword}
         />
 
+        <button id='submit' onClick={submitHandler}>SIGN UP</button>
       </form>
-      <br></br>
 
-      <button onClick={submitHandler}>Submit</button>
+
+
 
       <div className='bottomrow'>
-        <p>- Or sign in with - </p>
+        <p>- Or sign up with - </p>
+        <br></br>
         <img src='../images/Google - Original.svg'></img>
       </div>
     </div>
