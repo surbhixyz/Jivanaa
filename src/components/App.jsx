@@ -7,7 +7,7 @@ const App = () => {
     <div>
 
       <div className='homepage'>
-        <img src='/Shape.svg' ></img>
+        <img src='images/Shape.svg' ></img>
       </div>
 
       <div className='right-buttons'>

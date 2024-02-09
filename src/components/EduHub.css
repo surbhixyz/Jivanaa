@@ -1,0 +1,79 @@
+body{
+    overflow-y: scroll;
+}
+
+.Category {
+    margin: 1.5%;
+    margin-left: 7%;
+    margin-right: 7%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h3{
+    font-size: 17px;
+    font-family: poppins;
+}
+#current{
+
+    background-color: #A10F54;
+    color: #EEEEEE;
+    cursor: pointer;
+    border: none;
+    font-family: poppins;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.row-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.video, .podcast, .article{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    margin: 3%;
+    flex-wrap: wrap;
+}
+
+
+.video{
+    position:  relative;
+    left: 6%;
+}
+
+.podcast{
+    position:  relative;
+    left: 8%;
+}
+
+.article{
+    position:  relative;
+    left: 5%;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .podcast img, .article img, .video img {
+        margin: 1%;
+    }
+
+    .row-container{
+
+        position: absolute;
+        left: 17%;
+    }
+
+    .Category {
+        flex-direction: column;
+    }
+    #current{
+        width: 130px;
+    }
+
+}

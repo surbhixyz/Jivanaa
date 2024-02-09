@@ -7,6 +7,7 @@ import SignUp from './components/SignUp.jsx';
 import Home from './components/Home.jsx';
 import GetInvolved from './components/getInvolved.jsx';
 import AskExpert from './components/AskExpert.jsx';
+import EduHub from './components/EduHub.jsx';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -20,6 +21,7 @@ const AppRouter = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/get-involved" element={<GetInvolved />} />
         <Route path="/ask-expert" element={<AskExpert />} />
+        <Route path="/edu-hub" element={<EduHub />} />
       </Routes>
     </Router>
   );

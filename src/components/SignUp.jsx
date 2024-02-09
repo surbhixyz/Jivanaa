@@ -82,7 +82,7 @@ const SignUp = () => {
 
       <div className='bottomrow'>
         <p>- Or sign in with - </p>
-        <img src='../Google - Original.svg'></img>
+        <img src='../images/Google - Original.svg'></img>
       </div>
     </div>
   );
