@@ -40,10 +40,17 @@
       display: flex;
       align-items: center;
   
-      .profile-name {
+      .profile-name{
+        text-decoration: none;
         margin-right: 10px;
         font-weight: 500;
         font-family: poppins;
+
+        &:active{
+          color: #3C097D;
+          font-weight: bold;
+        }
+        
       }
   
       .profile-photo {
@@ -62,3 +69,7 @@
     }
   }
   
+
+  Link{
+    text-decoration: none;
+  }

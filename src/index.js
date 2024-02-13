@@ -8,9 +8,11 @@ import Home from "./components/Home.jsx";
 import GetInvolved from "./components/getInvolved.jsx";
 import AskExpert from "./components/AskExpert.jsx";
 import EduHub from "./components/EduHub.jsx";
-import Chatbot from "./components/Chatbot.jsx";
+import Error from "./components/Error.jsx";
+import Profile from "./components/profile.jsx";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Chatbot from "./components/Chatbot.jsx";
 import Community from "./components/Community.jsx";
 
 const AppRouter = () => {
@@ -18,12 +20,15 @@ const AppRouter = () => {
     <Router>
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="/*" element={<Error />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/home" element={<Home />} />
         <Route path="/get-involved" element={<GetInvolved />} />
         <Route path="/ask-expert" element={<AskExpert />} />
         <Route path="/edu-hub" element={<EduHub />} />
+        <Route path="/profile" element={<Profile />} />
+
         <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/community" element={<Community />} />
       </Routes>
