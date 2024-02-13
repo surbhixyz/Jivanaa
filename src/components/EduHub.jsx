@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 
 const EduHub = () => {
     return (
-        <div >
+        <div className='fullpage'>
             <Navbar />
 
             <div className='Category'>
