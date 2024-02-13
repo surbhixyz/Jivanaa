@@ -1,15 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import App from './components/App.jsx';
-import Login from './components/Login.jsx';
-import SignUp from './components/SignUp.jsx';
-import Home from './components/Home.jsx';
-import GetInvolved from './components/getInvolved.jsx';
-import AskExpert from './components/AskExpert.jsx';
-import EduHub from './components/EduHub.jsx';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import App from "./components/App.jsx";
+import Login from "./components/Login.jsx";
+import SignUp from "./components/SignUp.jsx";
+import Home from "./components/Home.jsx";
+import GetInvolved from "./components/getInvolved.jsx";
+import AskExpert from "./components/AskExpert.jsx";
+import EduHub from "./components/EduHub.jsx";
+import Chatbot from "./components/Chatbot.jsx";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Community from "./components/Community.jsx";
 
 const AppRouter = () => {
   return (
@@ -22,15 +24,17 @@ const AppRouter = () => {
         <Route path="/get-involved" element={<GetInvolved />} />
         <Route path="/ask-expert" element={<AskExpert />} />
         <Route path="/edu-hub" element={<EduHub />} />
+        <Route path="/chatbot" element={<Chatbot />} />
+        <Route path="/community" element={<Community />} />
       </Routes>
     </Router>
   );
 };
 
 ReactDOM.render(
-    <React.StrictMode>
-      <AppRouter />
-      <ToastContainer/>
-    </React.StrictMode>,
-    document.getElementById('root')
-  );
+  <React.StrictMode>
+    <AppRouter />
+    <ToastContainer />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
