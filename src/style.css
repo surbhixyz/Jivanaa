@@ -4,8 +4,8 @@
 }
 
 body {
-  background-image: url('/public/images/bg.jpeg');
-  background-repeat: no-repeat;
+  background-image: url('/public/images/bg-image.png');
+  background-size:cover;
 }
 
 

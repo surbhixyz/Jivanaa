@@ -1,8 +1,10 @@
 import React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+
   return (
     <div className='navbar-container'>
       <div className='options'>
@@ -17,8 +19,8 @@ const Navbar = () => {
       </div>
 
       <div className='profile'>
-        <div className='profile-info'>
-          <span className='profile-name'>Rhea</span>
+      <div className='profile-info'>
+      <Link to="/profile" className='profile-name'>Rhea</Link>
           <img src='../images/Vector.svg' alt='Dropdown' className='dropdown-icon' />
           <img src='../images/rhea.svg' alt='Profile' className='profile-photo' />
         </div>
