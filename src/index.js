@@ -16,7 +16,9 @@ import Chatbot from "./components/Chatbot.jsx";
 import Community from "./components/Community.jsx";
 
 const AppRouter = () => {
+
   return (
+
     <Router>
       <Routes>
         <Route path="/" element={<App />} />
@@ -28,6 +30,9 @@ const AppRouter = () => {
         <Route path="/ask-expert" element={<AskExpert />} />
         <Route path="/edu-hub" element={<EduHub />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/contact" element={<Contact />} />
+
 
         <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/community" element={<Community />} />
