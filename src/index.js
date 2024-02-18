@@ -10,15 +10,22 @@ import AskExpert from './components/AskExpert.jsx';
 import EduHub from './components/EduHub.jsx';
 import Error from './components/Error.jsx';
 import Profile from './components/profile.jsx'
+import AboutUs from './components/AboutUs.jsx';
+import Contact from './components/Contact.jsx';
+
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
+
 const AppRouter = () => {
+
   return (
+
     <Router>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/*" element={<Error/>} />
+        <Route path="/*" element={<Error />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/home" element={<Home />} />
@@ -26,16 +33,20 @@ const AppRouter = () => {
         <Route path="/ask-expert" element={<AskExpert />} />
         <Route path="/edu-hub" element={<EduHub />} />
         <Route path="/profile" element={<Profile />} />
-        
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/contact" element={<Contact />} />
+
       </Routes>
     </Router>
   );
 };
 
 ReactDOM.render(
-    <React.StrictMode>
-      <AppRouter />
-      <ToastContainer/>
-    </React.StrictMode>,
-    document.getElementById('root')
-  );
+
+  <React.StrictMode>
+    <AppRouter />
+    <ToastContainer />
+  </React.StrictMode>,
+  document.getElementById('root')
+  
+);

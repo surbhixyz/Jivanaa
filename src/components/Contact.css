@@ -1,0 +1,59 @@
+.contact-container{
+    font-family: poppins;
+}
+
+.founders {
+    display: flex;
+    justify-content: space-betwen;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    flex-wrap: wrap;
+    gap: 5%;
+    height: 350px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 3.5%;
+  }
+  
+  .founders div {
+    flex: 1;
+    border: 2px solid #6E26CD;
+    border-radius: 15px;
+    margin-left: 30px;
+    text-align: center;
+    position: relative;
+    padding: 2%;
+  }
+  
+
+  .founders div h1{
+    color: #AF105B;
+    font-size: 24px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    font-weight: lighter;
+  }
+
+.founders div button {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background: linear-gradient(97deg, #BB6BD9 0%, #6E26CD 54.67%, #4C0AA3 100%);
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 55%;
+    font-weight: bold;
+  }
+
+
+  .founders img{
+
+    height: 160px;
+    width: 160px;
+    border-radius: 80px;
+  }
