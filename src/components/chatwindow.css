@@ -1,0 +1,27 @@
+.chatwindow {
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+/* Target the MainContainer component */
+.MainContainer {
+  /* Add your custom styles here */
+  border: 2px solid #47118e;
+  border-radius: 15px;
+}
+
+/* Target the ChatContainer component */
+.ChatContainer {
+  /* Add your custom styles here */
+}
+
+/* Target the MessageList component */
+.MessageList {
+  /* Add your custom styles here */
+  background-color: #e0e0e0;
+}
+
+/* Target the MessageInput component */
+.MessageInput {
+  /* Add your custom styles here */
+}

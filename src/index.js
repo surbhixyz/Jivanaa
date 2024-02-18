@@ -1,22 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import App from './components/App.jsx';
-import Login from './components/Login.jsx';
-import SignUp from './components/SignUp.jsx';
-import Home from './components/Home.jsx';
-import GetInvolved from './components/getInvolved.jsx';
-import AskExpert from './components/AskExpert.jsx';
-import EduHub from './components/EduHub.jsx';
-import Error from './components/Error.jsx';
-import Profile from './components/profile.jsx'
-import AboutUs from './components/AboutUs.jsx';
-import Contact from './components/Contact.jsx';
-
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
-
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import App from "./components/App.jsx";
+import Login from "./components/Login.jsx";
+import SignUp from "./components/SignUp.jsx";
+import Home from "./components/Home.jsx";
+import GetInvolved from "./components/getInvolved.jsx";
+import AskExpert from "./components/AskExpert.jsx";
+import EduHub from "./components/EduHub.jsx";
+import Error from "./components/Error.jsx";
+import Profile from "./components/profile.jsx";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Chatbot from "./components/Chatbot.jsx";
+import Community from "./components/Community.jsx";
 
 const AppRouter = () => {
 
@@ -36,17 +33,18 @@ const AppRouter = () => {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
 
+
+        <Route path="/chatbot" element={<Chatbot />} />
+        <Route path="/community" element={<Community />} />
       </Routes>
     </Router>
   );
 };
 
 ReactDOM.render(
-
   <React.StrictMode>
     <AppRouter />
     <ToastContainer />
   </React.StrictMode>,
-  document.getElementById('root')
-  
+  document.getElementById("root")
 );
