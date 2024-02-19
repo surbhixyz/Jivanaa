@@ -8,17 +8,22 @@
   /* Add your custom styles here */
   border: 2px solid #47118e;
   border-radius: 15px;
+  display: flex;
+  height: 75vh;
 }
 
 /* Target the ChatContainer component */
 .ChatContainer {
   /* Add your custom styles here */
+  flex: 1; /* Expand to fill available space */
+  overflow: auto;
 }
 
 /* Target the MessageList component */
 .MessageList {
   /* Add your custom styles here */
-  background-color: #e0e0e0;
+  background-image: url("/public/images/bg-image.png");
+  background-position: 10%;
 }
 
 /* Target the MessageInput component */
