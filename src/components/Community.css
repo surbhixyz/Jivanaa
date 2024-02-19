@@ -31,4 +31,5 @@
   padding: 15px 30px;
   background: linear-gradient(97deg, #bb6bd9 0%, #6e26cd 54.67%, #4c0aa3 100%);
   box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }

@@ -36,7 +36,7 @@ const Contact = () => {
 
           <div>
             <img src='../images/priyanshi-jivanaa.jpg'></img>
-            <h1>Priyanshi Choudhary</h1>
+            <h1>Priyanshi Chaudhary</h1>
             <p1>SWE intern @LinkedIn'24 ,</p1>
             <br></br>
             <p1>CSE-AI Undergrad @IGDTUW</p1>
