@@ -13,8 +13,8 @@ const Navbar = () => {
           <li> <NavLink to='/home' activeClassName='active'>Home</NavLink></li>
           <li> <NavLink to='/get-involved' activeClassName='active'>Get Involved</NavLink></li>
           <li> <NavLink to='/ask-expert' activeClassName='active'>Ask Expert</NavLink></li>
-          <li> <NavLink to='/about-us' activeClassName='active'>About Us</NavLink></li>
-          <li> <NavLink to='/contact' activeClassName='active'>Contact</NavLink></li>
+          <li> <NavLink to='/about-us' activeClassName='active'>About Jivanaa</NavLink></li>
+          <li> <NavLink to='/contact' activeClassName='active'>Contact Us</NavLink></li>
         </ul>
       </div>
 

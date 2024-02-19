@@ -68,7 +68,7 @@ const Profile = () => {
                     <img src='../images/rhea.svg'></img>
                 </div>
 
-                <form onSubmit={handleSubmit}>
+                <form className='profile' onSubmit={handleSubmit}>
 
 
                     <div className='fields'>
