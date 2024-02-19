@@ -14,6 +14,8 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Chatbot from "./components/Chatbot.jsx";
 import Community from "./components/Community.jsx";
+import AboutUs from './components/AboutUs.jsx';
+import Contact from './components/Contact.jsx';
 
 const AppRouter = () => {
 
