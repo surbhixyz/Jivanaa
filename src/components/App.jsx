@@ -1,11 +1,17 @@
 import React from "react";
+import EduHub from "./EduHub";
+import Navbar from "./Navbar";
+import { BrowserRouter } from "react-router-dom";
+import '../index.css'
 
 function App(){
 
-    return <div>
-        <h1>Hello World !</h1>
+    return (<div>
+        <BrowserRouter>
+       <EduHub></EduHub>
+       </BrowserRouter>
     </div>
-    
+    );
 }
 
 export default App;

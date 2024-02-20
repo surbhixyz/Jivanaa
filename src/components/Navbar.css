@@ -1,0 +1,74 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  
+  .options {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      li {
+        margin-right: 20px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      li a.active {
+        background: linear-gradient(97deg, #BB6BD9 0%, #6E26CD 54.67%, #4C0AA3 100%);
+        color: white; 
+        padding: 8px;
+        border-radius: 4px;
+    }
+    a {
+        text-decoration: none;
+        color: #3C097D;
+        font-weight: 500;
+        font-family: 'Poppins';
+    }
+    }
+  }
+  
+  .profile {
+    .profile-info {
+      display: flex;
+      align-items: center;
+  
+      .profile-name{
+        text-decoration: none;
+        margin-right: 10px;
+        font-weight: 500;
+        font-family: poppins;
+
+        &:active{
+          color: #3C097D;
+          font-weight: bold;
+        }
+        
+      }
+  
+      .profile-photo {
+        width:40px; 
+        height: 40px; 
+        border-radius: 50%;
+        object-fit: cover;
+      }
+  
+      .dropdown-icon {
+        width: 10px; 
+        height: 10px;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+    }
+  }
+  
+
+  Link{
+    text-decoration: none;
+  }
