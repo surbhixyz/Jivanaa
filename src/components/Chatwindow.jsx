@@ -9,6 +9,7 @@ import {
   MessageInput,
   TypingIndicator,
 } from "@chatscope/chat-ui-kit-react";
+import { Link } from "react-router-dom";
 
 import "./chatwindow.css";
 
@@ -17,6 +18,7 @@ const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
 function Chatwindow() {
+  const [cursor, setCursor] = useState("pointer");
   const [messages, setMessages] = useState([
     {
       message: "Hello, I'm GeminiAI! Ask me anything!",
@@ -26,13 +28,6 @@ function Chatwindow() {
   ]);
   const [isTyping, setIsTyping] = useState(false);
   const container = useRef(null);
-
-  const Scroll = () => {
-    const { offsetHeight, scrollHeight, scrollTop } = container.current;
-    if (scrollHeight <= scrollTop + offsetHeight + 100) {
-      container.current?.scrollTo(0, scrollHeight);
-    }
-  };
 
   const handleSend = async (message) => {
     if (!message) {
@@ -95,6 +90,19 @@ function Chatwindow() {
           />
         </ChatContainer>
       </MainContainer>
+      <div className="btn-chatbot-container">
+        <Link to={"/ask-expert"}>
+          <button className="btn-chatbot" style={{ cursor: cursor }}>
+            ASK EXPERT
+          </button>
+        </Link>
+
+        <Link to={"/"}>
+          <button className="btn-chatbot" style={{ cursor: cursor }}>
+            CONSULT DOCTOR
+          </button>
+        </Link>
+      </div>
     </div>
   );
 }
