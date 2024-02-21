@@ -1,40 +1,39 @@
 .navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 50px;
-  padding-bottom: 30px;
-  padding-left: 6%;
-  padding-right: 6%;
-}
-
-.options {
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
-    li {
-      margin-right: 20px;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    li a.active {
-      background: linear-gradient(
-        97deg,
-        #bb6bd9 0%,
-        #6e26cd 54.67%,
-        #4c0aa3 100%
-      );
-      color: white;
-      padding: 8px;
-      border-radius: 4px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  
+  .options {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      li {
+        margin-right: 20px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      li a.active {
+        background: linear-gradient(97deg, #BB6BD9 0%, #6E26CD 54.67%, #4C0AA3 100%);
+        color: white; 
+        padding: 8px;
+        border-radius: 4px;
     }
     a {
-      text-decoration: none;
-      color: #3c097d;
-      font-weight: 500;
-      font-family: poppins;
+        text-decoration: none;
+        color: #3C097D;
+        font-weight: 500;
+        font-family: poppins;
+        font-weight: bolder;
     }
   }
 }
@@ -74,6 +73,19 @@
 
 Link {
   text-decoration: none;
+}
+
+@media screen and (max-width: 755px) {
+  .options {
+    ul {
+      
+      display: flex;
+      flex-direction: column;        
+    }  
+
+    li {
+      margin-bottom: 4%;
+    }
 }
 
 .logOut {

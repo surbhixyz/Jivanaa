@@ -2,11 +2,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .btns{
-    margin-left: 10%;
+    width: 100%;
+
 }
 
 .button-container {
@@ -14,6 +15,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 2%;
+
 }
 
 .btns button {
@@ -22,10 +24,10 @@
     width: 160px;
     height: 50px;
     border-radius: 7px;
-    border: 2px solid rgba(46, 2, 73, 0.3);
+    border: 2px solid rgba(46, 2, 73, 0.6);
     background-color: transparent;
     font-size: 17px;
-    color: rgba(46, 2, 73, 0.5);
+    color: rgba(46, 2, 73, 1);
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -43,7 +45,7 @@ textarea {
     border: solid 2px #A10F54;
     padding: 1.5%;
     margin-left: 10%;
-    background-color: rgba(85, 100, 87, 0.07);
+    background-color: rgba(85, 100, 87, 0.1);
     font-family: poppins;
 }
 
@@ -64,10 +66,14 @@ button[type="submit"] {
 
 .askform p{
     font-size: small;
-    position: absolute;
-    bottom: 2%;
+    color: black;
 }
 
 label{
     font-weight: bold;
 }
+
+
+.askform ::placeholder{
+    color:black;
+} 

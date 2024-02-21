@@ -17,6 +17,8 @@ import Community from "./components/Community.jsx";
 import AboutUs from "./components/AboutUs.jsx";
 import Contact from "./components/Contact.jsx";
 import { AuthContextProvider } from "./components/Auth/AuthContext.js";
+import StayTuned from "./components/StayTuned.jsx";
+import ServiceLocator from "./components/ServiceLocator.jsx";
 
 const AppRouter = () => {
   return (
@@ -35,7 +37,8 @@ const AppRouter = () => {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/home" element={<Home />} />
-
+          <Route path="/stay-tuned" element={<StayTuned />} />
+          <Route path="/service-aid" element={<ServiceLocator />} />
           <Route path="/chatbot" element={<Chatbot />} />
           <Route path="/community" element={<Community />} />
         </Routes>
