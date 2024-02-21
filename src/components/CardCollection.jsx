@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import { Carousel } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./CardCollection.css"; 
 
 function CardCollection({ cardData , cardinfo}) {
