@@ -1,7 +1,17 @@
-.err-container{
-    margin-top: 6%;
+.err-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    margin-top: 10%;
+
+    img{
+        height: 350px;
+        width: 500px;
+     }
+}
+
+p {
+    margin-top: 2%;
+    font-weight: bold;
+    font-size: larger;
 }
