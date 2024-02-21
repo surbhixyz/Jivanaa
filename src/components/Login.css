@@ -1,5 +1,5 @@
 .full {
-  background-image: url('/public/images/bg-liquid.jpg');
+  background-image: url("/public/images/bg-liquid.jpg");
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -18,7 +18,6 @@
   font-family: poppins;
   /* background: rgba(255, 255, 255, 0.1); 
   backdrop-filter: blur(10px);  */
-
 }
 
 .topbuttons button {
@@ -31,13 +30,13 @@
 }
 
 #signup {
-  background-color: #AF105B;
-  color: #FFFFFF;
+  background-color: #af105b;
+  color: #ffffff;
 }
 
 #signin {
-  border-color: #AF105B;
-  color: #AF105B;
+  border-color: #af105b;
+  color: #af105b;
   border: solid 2.5px;
 }
 
@@ -46,15 +45,15 @@ form {
   flex-direction: column;
   align-items: flex-start;
   width: 35%;
-  color: #460E8F;
+  color: #460e8f;
 }
 
 label {
   margin-bottom: 8px;
 }
 
-#white-txt{
-  color:wheat;
+#white-txt {
+  color: wheat;
 }
 
 input {
@@ -65,15 +64,12 @@ input {
   border: none;
 }
 
-
-
 .bottomrow img {
   width: 70px;
   height: 70px;
   position: absolute;
   left: 48%;
   margin-top: 1.5%;
-
 }
 
 .bottomrow p {
@@ -81,15 +77,14 @@ input {
 }
 
 #submit {
-  background: linear-gradient(97deg, #ad37d7 20%, #6E26CD 66.67%, #4C0AA3 100%);
+  background: linear-gradient(97deg, #ad37d7 20%, #6e26cd 66.67%, #4c0aa3 100%);
   box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   margin-top: 8%;
   margin-bottom: 8%;
   padding: 15px;
   width: 106.5%;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   cursor: pointer;
-
 }

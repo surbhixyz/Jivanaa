@@ -1,20 +1,23 @@
-import React, { useState } from 'react';
-import '../components/Login.css';
-import Home from './Home.jsx';
-import { toast } from 'react-toastify';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import "../components/Login.css";
+import Home from "./Home.jsx";
+import { toast } from "react-toastify";
+import { Link } from "react-router-dom";
+import { GoogleButton } from "react-google-button";
+import { UserAuth } from "./Auth/AuthContext.js";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const [formData, setFormData] = useState({ "Email": "", "password": "" });
+  const [formData, setFormData] = useState({ Email: "", password: "" });
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   function changeHandler(event) {
     const { name, value } = event.target;
-    setFormData(prevFormData => {
+    setFormData((prevFormData) => {
       return {
         ...prevFormData,
-        [name]: value
-      }
+        [name]: value,
+      };
     });
   }
 
@@ -28,12 +31,30 @@ const Login = () => {
 
     setIsLoggedIn(true);
 
-    toast.success("Logged in successfully!")
+    toast.success("Logged in successfully!");
   }
 
   if (isLoggedIn) {
     return <Home />;
   }
+
+  const { googleSignIn, user } = UserAuth();
+
+  const navigate = useNavigate();
+
+  const handleGoogleSignIn = async () => {
+    try {
+      await googleSignIn();
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    if (user != null) {
+      navigate("/home");
+    }
+  }, [user]);
 
   return (
     <div className='full'>
@@ -70,11 +91,12 @@ const Login = () => {
         </form>
         <br></br>
 
-        <div className='bottomrow'>
-          <p id='white-txt'>- Or sign in with - </p>
-          <img src='../images/Google - Original.svg' alt="Google Logo"></img>
+      <div className="bottomrow">
+        <div className="google-btn">
+          <GoogleButton onClick={handleGoogleSignIn} />
         </div>
       </div>
+    </div>
     </div>
   );
 };

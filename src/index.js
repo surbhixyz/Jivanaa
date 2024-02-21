@@ -14,36 +14,36 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Chatbot from "./components/Chatbot.jsx";
 import Community from "./components/Community.jsx";
-import AboutUs from './components/AboutUs.jsx';
-import Contact from './components/Contact.jsx';
+import AboutUs from "./components/AboutUs.jsx";
+import Contact from "./components/Contact.jsx";
+import { AuthContextProvider } from "./components/Auth/AuthContext.js";
 import StayTuned from "./components/StayTuned.jsx";
-import ServiceLocator from "./components/ServiceLocator.jsx"
+import ServiceLocator from "./components/ServiceLocator.jsx";
 
 const AppRouter = () => {
-
   return (
-
-    <Router>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/*" element={<Error />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/get-involved" element={<GetInvolved />} />
-        <Route path="/ask-expert" element={<AskExpert />} />
-        <Route path="/edu-hub" element={<EduHub />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/stay-tuned" element={<StayTuned />} />
-
-        <Route path="/service-aid" element={<ServiceLocator/>} />
-
-        <Route path="/chatbot" element={<Chatbot />} />
-        <Route path="/community" element={<Community />} />
-      </Routes>
-    </Router>
+    <AuthContextProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/*" element={<Error />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/get-involved" element={<GetInvolved />} />
+          <Route path="/ask-expert" element={<AskExpert />} />
+          <Route path="/edu-hub" element={<EduHub />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/stay-tuned" element={<StayTuned />} />
+          <Route path="/service-aid" element={<ServiceLocator />} />
+          <Route path="/chatbot" element={<Chatbot />} />
+          <Route path="/community" element={<Community />} />
+        </Routes>
+      </Router>
+    </AuthContextProvider>
   );
 };
 

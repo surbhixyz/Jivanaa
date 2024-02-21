@@ -1,16 +1,14 @@
 * {
   margin: 0px;
   padding: 0px;
-
 }
 
 body {
   /* background-image: url('/public/images/bg-image.png'); */
-  background-image: url('/public/images/image.png');
-  backdrop-filter: blur(10px); 
-  background-size:cover;
+  background-image: url("/public/images/image.png");
+  backdrop-filter: blur(10px);
+  background-size: cover;
 }
-
 
 /* Home page css */
 
@@ -21,14 +19,11 @@ body {
 }
 
 .homepage img {
-
   height: 600px;
   width: 40%;
 }
 
-
 .right-buttons {
-
   position: absolute;
   top: 40px;
   right: 20px;
@@ -36,10 +31,9 @@ body {
   gap: 12px;
 }
 
-
 .right-buttons .login {
   border-radius: 5px;
-  background: linear-gradient(97deg, #BB6BD9 0%, #6E26CD 54.67%, #4C0AA3 100%);
+  background: linear-gradient(97deg, #bb6bd9 0%, #6e26cd 54.67%, #4c0aa3 100%);
   box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
   padding: 12px 43px;
   justify-content: center;
@@ -48,10 +42,9 @@ body {
   font-family: Poppins;
 }
 
-
 .right-buttons .signup {
   border-radius: 5px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
   padding: 12px 38px;
   justify-content: center;
@@ -68,6 +61,7 @@ body {
   align-items: center;
   justify-items: center;
 
+  background: linear-gradient(180deg, #2d0660 34.9%, #bb6bd9 93.49%);
   h1{
     background: linear-gradient(180deg, #2D0660 34.9%, #BB6BD9 93.49%);
   background-clip: text;
@@ -79,6 +73,22 @@ body {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+}
+
+.content p {
+  position: absolute;
+  top: 51.5%;
+  right: 19%;
+  display: flex;
+
+  color: #000;
+  font-family: Poppins;
+  font-size: 23px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: normal;
+}
+
   }
 
   p {
