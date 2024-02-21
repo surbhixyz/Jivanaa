@@ -4,42 +4,37 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-  function handlClick() {}
+  function handlClick() { }
   return (
-    <div>
+    <div className='home-full'>
       <Navbar />
 
       <div className="row-container">
         <div className="row1">
-          <Link to="/edu-hub">
-            <img src="../images/25.png"></img>
+          <Link to="/edu-hub" className="image-link">
+            <img src="../images/edu hub.png"></img>
           </Link>
-          <Link to="/community">
-            <img src="../images/14.png"></img>
+          <Link to="/community" className="image-link">
+            <img src="../images/community connect.png"></img>
           </Link>
-          <Link to="/service-aid">
-            <img src="../images/23.png"></img>
+          <Link to="/stay-tuned" className="image-link">
+            <img src="../images/service locator.png"></img>
           </Link>
         </div>
 
         <div className="row2">
-          <Link to="/virtual-consult">
-            <img src="../images/49.png"></img>
+          <Link to="/stay-tuned" className="image-link">
+            <img src="../images/reminder.png"></img>
           </Link>
-          <Link to="/reminder-insights">
-            <img src="../images/32.png"></img>
+          <Link to="/stay-tuned" className="image-link">
+            <img src="../images/virtual health consult.png"></img>
           </Link>
-          <Link to="/family-planning">
-            <img src="../images/27.png"></img>
+          <Link to="/chatbot" className="image-link">
+            <img src="../images/AI.png"></img>
           </Link>
         </div>
       </div>
 
-      <div className="chatbot-icon">
-        <Link to="/chatbot">
-          <img src="../images/chatbot.png"></img>
-        </Link>
-      </div>
     </div>
   );
 };

@@ -21,7 +21,7 @@ const Login = () => {
   function submitHandler(event) {
     event.preventDefault();
 
-    if (!formData.Email || !formData.password ) {
+    if (!formData.Email || !formData.password) {
       toast.error("Please fill in all the fields.");
       return;
     }
@@ -36,42 +36,44 @@ const Login = () => {
   }
 
   return (
-    <div className='loginform'>
-      <div className='topbuttons'>
-      <Link to="/signup"><button id='signin'>SIGN UP</button></Link>
-        <button id='signup' onClick={submitHandler}>SIGN IN</button>
-      </div>
+    <div className='full'>
+      <div className='loginform'>
+        <div className='topbuttons'>
+          <Link to="/signup"><button id='signin'>SIGN UP</button></Link>
+          <button id='signup' onClick={submitHandler}>SIGN IN</button>
+        </div>
 
-      <form>
-        <label htmlFor='Email'>Email</label>
+        <form>
+          <label htmlFor='Email' id='white-txt'>Email</label>
+          <br></br>
+          <input
+            type="text"
+            placeholder='Enter Email'
+            name="Email"
+            onChange={changeHandler}
+            value={formData.Email}
+          />
+
+          <br></br>
+          <label htmlFor='password' id='white-txt'>Password</label>
+          <br></br>
+          <input
+            type="password"
+            placeholder='Enter Password'
+            name="password"
+            onChange={changeHandler}
+            value={formData.password}
+          />
+
+          <button id='submit' onClick={submitHandler}> SIGN IN</button>
+
+        </form>
         <br></br>
-        <input
-          type="text"
-          placeholder='Enter Email'
-          name="Email"
-          onChange={changeHandler}
-          value={formData.Email}
-        />
 
-        <br></br>
-        <label htmlFor='password'>Password</label>
-        <br></br>
-        <input
-          type="password"
-          placeholder='Enter Password'
-          name="password"
-          onChange={changeHandler}
-          value={formData.password}
-        />
-
-        <button id='submit' onClick={submitHandler}> SIGN IN</button>
-
-      </form>
-      <br></br>
-
-      <div className='bottomrow'>
-        <p>- Or sign in with - </p>
-        <img src='../images/Google - Original.svg' alt="Google Logo"></img>
+        <div className='bottomrow'>
+          <p id='white-txt'>- Or sign in with - </p>
+          <img src='../images/Google - Original.svg' alt="Google Logo"></img>
+        </div>
       </div>
     </div>
   );
