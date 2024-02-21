@@ -1,5 +1,20 @@
+
 body{
     overflow-y: scroll;
+}
+.fullpage{
+    display: flex;
+    flex-direction:column;
+
+    p {
+        margin-left: 100px;
+        margin-top: 14px;
+        margin-bottom: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 17px;
+        text-decoration: dotted;
+      }
 }
 
 
@@ -12,12 +27,65 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     height: 100;
+    font-family: 'Poppins';
+   
+    button{
+        padding: 7px;
+        border: 2px solid rgb(230, 226, 226);
+        border-radius: 4px;
+        font-family:inherit;
+        font-size: 17px;
+        font-weight: 500;
+        background:#A1CCA5 ;
+  }
+    button:hover{
+      /* background: linear-gradient(97deg, #BB6BD9 0%, #6E26CD 54.67%, #4C0AA3 100%); */
+       border: 4px solid #BB6BD9;
+       font-weight: 600;
+    }
+
 }
 
 h3{
     font-size: 17px;
     font-family: poppins;
 }
+
+.gov_pol{
+  margin:none;
+
+  .article{
+    margin-left:80px;
+    display: flex;
+    flex-direction:row;
+  }
+  .podcast{
+    margin-left:80px;
+    display: flex;
+    flex-direction:row;
+  }
+  .video{
+    margin-left:80px;
+    display: flex;
+    flex-direction:row;
+  }
+}
+ .myth{
+  .article{
+    margin-left:140px;
+    display: flex;
+    flex-direction:row;
+  }
+  p{
+    text-align: center;
+    font-family:'Poppins';
+    font-size: 18px;
+    margin: 4%;
+    color:rgb(72, 25, 98);
+    text-shadow: 10px 10px 20px rgb(202, 129, 166);
+  }
+ }
+
 #current{
 
     background-color: #A10F54;
@@ -29,47 +97,55 @@ h3{
     border-radius: 8px;
 }
 
-.row-container{
-    display: flex;
-    flex-direction: column;
-}
-
-.video, .podcast, .article{
-    display: flex;
-    flex-direction: row;
-    gap: 2%;
-    margin: 3%;
-    flex-wrap: wrap;
-}
-
-
 .video{
-    position:  relative;
-    left: 6%;
+   margin:20px;
+   margin-left:150px;
+   display: flex;
+   flex-direction:row;
+}
+/* .row-container::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  .row-container::-webkit-scrollbar-thumb {
+    background-color:  #ee6bf046;
+    border-radius: 6px;
+    border:1px solid white;
+  }
+
+  .row-container::-webkit-scrollbar-track {
+    background-color: #eac2dc;
+  }
+
+  .row-container::-moz-scrollbar {
+    width: 12px;
+  }
+
+  .row-container::-moz-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+  }
+
+  .row-container::-moz-scrollbar-track {
+    background-color: #f1f1f1;
+  } */
+
+.article{
+    margin:20px;
+    margin-left:150px;
+    display: flex;
+    flex-direction:row;
 }
 
 .podcast{
-    position:  relative;
-    left: 8%;
-}
+    margin:20px;
+    margin-left:150px;
+   display: flex;
+   flex-direction:row;
 
-.article{
-    position:  relative;
-    left: 5%;
 }
-
 
 @media only screen and (max-width: 768px) {
-
-    .podcast img, .article img, .video img {
-        margin: 1%;
-    }
-
-    .row-container{
-
-        position: absolute;
-        left: 17%;
-    }
 
     .Category {
         flex-direction: column;
@@ -77,5 +153,19 @@ h3{
     #current{
         width: 130px;
     }
+    .fullpage{
+      flex-direction: column;
+    }
+    .profile-info {
+      flex-direction: column;
 
+      .profile-name {
+        margin-right: 0;
+        margin-bottom: 5px;
+      }
+
+      .profile-photo {
+        margin-bottom: 5px;
+      }
+    }
 }

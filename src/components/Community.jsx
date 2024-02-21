@@ -4,6 +4,19 @@ import WidgetBot from "@widgetbot/react-embed";
 import "./Community.css";
 
 function Community() {
+  const [cursor, setCursor] = useState("pointer");
+
+  // Function to handle button click
+  const handleClick = () => {
+    // Change cursor to 'wait' when clicked
+    setCursor("wait");
+
+    // Do something here, for example, setTimeout to revert the cursor after some time
+    setTimeout(() => {
+      setCursor("pointer");
+    }, 2000); // Revert cursor to 'pointer' after 2 seconds (2000 milliseconds)
+  };
+
   const App = () => (
     <div className="bot">
       <WidgetBot
@@ -32,7 +45,13 @@ function Community() {
         target="_blank"
         className="button-container"
       >
-        <button className="btn">JOIN NOW</button>
+        <button
+          className="btn"
+          style={{ cursor: cursor }}
+          onClick={handleClick}
+        >
+          JOIN NOW
+        </button>
       </a>
     </div>
   );
