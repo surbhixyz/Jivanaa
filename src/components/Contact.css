@@ -60,7 +60,11 @@
     width: 160px;
     border-radius: 80px;
   }
-
+   
+  #priyanshi{
+    height: 160px;
+    width:140px;
+  }
 
   @media only screen and (max-width: 768px) {
     .founders{

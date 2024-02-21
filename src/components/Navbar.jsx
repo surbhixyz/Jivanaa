@@ -61,7 +61,9 @@ const Navbar = () => {
       <div className="profile">
         <div className="profile-info">
           <div class="dropdown">
+
             <button class="button-with-image" type="button"></button>
+            
             <ul class="dropdown-menu">
               <li>
                 <a class="dropdown-item" href="/profile">

@@ -31,7 +31,7 @@ const Contact = () => {
           </div>
 
           <div>
-            <img src="../images/priyanshi-final-final.jpg"></img>
+            <img id="priyanshi" src="../images/priyanshi-final-final.jpg"></img>
             <h1>Priyanshi Chaudhary</h1>
             <p1>SWE intern @LinkedIn'24 ,</p1>
             <br></br>

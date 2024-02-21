@@ -46,91 +46,155 @@ const SignUp = () => {
     return <Login />;
   }
 
-  return (
-    <div className="loginform">
-      <div className="topbuttons">
-        <button id="signup">SIGN UP</button>
-        <Link to="/login">
-          <button id="signin">SIGN IN</button>
-        </Link>
-      </div>
-    <div className='full'>
-      <div className='loginform'>
-        <div className='topbuttons'>
-          <button id='signup'>SIGN UP</button>
-          <Link to="/login"><button id='signin'>SIGN IN</button></Link>
-        </div>
+return(
+<div className="loginform">
+  <div className="topbuttons">
+    <button id="signup">SIGN UP</button>
+    <Link to="/login">
+      <button id="signin">SIGN IN</button>
+    </Link>
+  </div>
 
-      <form onSubmit={submitHandler}>
-        <label htmlFor="Email">Email</label>
-        <form onSubmit={submitHandler}>
-          <label htmlFor='Email' id='white-txt' >Email</label>
+  <form onSubmit={submitHandler}>
+    <label htmlFor="email" id="white-txt">
+      Email
+    </label>
+    <input
+      type="text"
+      placeholder="Enter Email"
+      name="email"
+      onChange={changeHandler}
+      value={formData.email}
+    />
 
-        <input
-          type="text"
-          placeholder="Enter Email"
-          name="Email"
-          onChange={changeHandler}
-          value={formData.Email}
-        />
-          <input
-            type="text"
-            placeholder='Enter Email'
-            name="Email"
-            onChange={changeHandler}
-            value={formData.Email}
-          />
+    <label htmlFor="password" id="white-txt">
+      Password
+    </label>
+    <input
+      type="password"
+      placeholder="Enter Password"
+      name="password"
+      onChange={changeHandler}
+      value={formData.password}
+    />
 
-        <label htmlFor="password">Password</label>
+    <label htmlFor="confirmPassword" id="white-txt">
+      Confirm Password
+    </label>
+    <input
+      type="password"
+      placeholder="Confirm Password"
+      name="confirmPassword"
+      onChange={changeHandler}
+      value={formData.confirmPassword}
+    />
 
-          <label htmlFor='password' id='white-txt' >Password</label>
+    <button id="submit" type="submit">
+      SIGN UP
+    </button>
+  </form>
 
-        <input
-          type="password"
-          placeholder="Enter Password"
-          name="password"
-          onChange={changeHandler}
-          value={formData.password}
-        />
-          <input
-            type="password"
-            placeholder='Enter Password'
-            name="password"
-            onChange={changeHandler}
-            value={formData.password}
-          />
+  <div className="bottomrow">
+    <p>- Or sign up with - </p>
+    <br />
+    <img src="../images/Google - Original.svg" alt="Google Logo" />
+  </div>
+</div>
+);
+}
 
-        <label htmlFor="password">Confirm Password</label>
 
-          <label htmlFor='password' id='white-txt'>Confirm Password</label>
 
-        <input
-          type="password"
-          placeholder="Confirm Password"
-          name="confirmPassword"
-          onChange={changeHandler}
-          value={formData.confirmPassword}
-        />
-          <input
-            type="password"
-            placeholder='Confirm Password'
-            name="confirmPassword"
-            onChange={changeHandler}
-            value={formData.confirmPassword}
-          />
 
-        <button id="submit" onClick={submitHandler}>
-          SIGN UP
-        </button>
-      </form>
 
-      <div className="bottomrow">
-        <p>- Or sign up with - </p>
-        <br></br>
-        <img src="../images/Google - Original.svg"></img>
-      </div>
-    </div>
-  );
-};
+//   return (
+//     <div className="loginform">
+//       <div className="topbuttons">
+//         <button id="signup">SIGN UP</button>
+//         <Link to="/login">
+//           <button id="signin">SIGN IN</button>
+//         </Link>
+//       </div>
+//     <div className='full'>
+//       <div className='loginform'>
+//         <div className='topbuttons'>
+//           <button id='signup'>SIGN UP</button>
+//           <Link to="/login"><button id='signin'>SIGN IN</button></Link>
+//         </div>
+
+//       <form onSubmit={submitHandler}>
+//         <label htmlFor="Email">Email</label>
+//         </form>
+//         <form onSubmit={submitHandler}>
+//           <label htmlFor='Email' id='white-txt' >Email</label>
+
+//         <input
+//           type="text"
+//           placeholder="Enter Email"
+//           name="Email"
+//           onChange={changeHandler}
+//           value={formData.Email}
+//         />
+//           <input
+//             type="text"
+//             placeholder='Enter Email'
+//             name="Email"
+//             onChange={changeHandler}
+//             value={formData.Email}
+//           />
+
+//         <label htmlFor="password">Password</label>
+
+//           <label htmlFor='password' id='white-txt' >Password</label>
+
+//         <input
+//           type="password"
+//           placeholder="Enter Password"
+//           name="password"
+//           onChange={changeHandler}
+//           value={formData.password}
+//         />
+//           <input
+//             type="password"
+//             placeholder='Enter Password'
+//             name="password"
+//             onChange={changeHandler}
+//             value={formData.password}
+//           />
+
+//         <label htmlFor="password">Confirm Password</label>
+
+//           <label htmlFor='password' id='white-txt'>Confirm Password</label>
+
+//         <input
+//           type="password"
+//           placeholder="Confirm Password"
+//           name="confirmPassword"
+//           onChange={changeHandler}
+//           value={formData.confirmPassword}
+//         />
+//           <input
+//             type="password"
+//             placeholder='Confirm Password'
+//             name="confirmPassword"
+//             onChange={changeHandler}
+//             value={formData.confirmPassword}
+//           />
+
+//         <button id="submit" onClick={submitHandler}>
+//           SIGN UP
+//         </button>
+//       </form>
+      
+//       <div className="bottomrow">
+//         <p>- Or sign up with - </p>
+//         <br></br>
+//         <img src="../images/Google - Original.svg"></img>
+//       </div>
+//     </div>
+//     </div>
+//     </div>
+//   );
+// };
 
 export default SignUp;

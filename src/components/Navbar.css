@@ -146,10 +146,9 @@ Link {
 }
 
 .button-with-image {
-  background-image: url("C:\Users\sood_\OneDrive\Desktop\New folder\Jivanaa\public\images\Keyboard arrow down.svg"); /* Replace 'path/to/your/image.png' with the actual path to your image */
-  background-size: 25px; /* Adjust the size of the image */
-  background-repeat: no-repeat; /* Ensure the image doesn't repeat */
-  background-position: center; /* Center the image */
+  background-image: url('/public/images/arrow.svg'); /* Replace with the path to your image */
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
   padding: 10px 20px; /* Add padding to give space around the image */
   border: none; /* Remove default button border */
   cursor: pointer; /* Set cursor to pointer on hover */
