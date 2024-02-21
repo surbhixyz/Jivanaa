@@ -1,6 +1,8 @@
 
 .navbar-container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding-top: 50px;
@@ -15,6 +17,9 @@
       padding: 0;
       margin: 0;
       display: flex;
+      flex-direction: row;
+
+
       li {
         margin-right: 20px;
         cursor: pointer;
@@ -31,6 +36,7 @@
         color: #3C097D;
         font-weight: 500;
         font-family: poppins;
+        font-weight: bolder;
     }
     }
   }
@@ -73,3 +79,17 @@
   Link{
     text-decoration: none;
   }
+
+  @media screen and (max-width: 755px) {
+    .options {
+      ul {
+        
+        display: flex;
+        flex-direction: column;        
+      }  
+
+      li {
+        margin-bottom: 4%;
+      }
+  }
+}

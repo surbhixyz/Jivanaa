@@ -16,6 +16,7 @@ import Chatbot from "./components/Chatbot.jsx";
 import Community from "./components/Community.jsx";
 import AboutUs from './components/AboutUs.jsx';
 import Contact from './components/Contact.jsx';
+import StayTuned from "./components/StayTuned.jsx";
 
 const AppRouter = () => {
 
@@ -34,6 +35,7 @@ const AppRouter = () => {
         <Route path="/profile" element={<Profile />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/stay-tuned" element={<StayTuned />} />
 
 
         <Route path="/chatbot" element={<Chatbot />} />
