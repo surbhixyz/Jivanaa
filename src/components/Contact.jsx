@@ -17,7 +17,7 @@ const Contact = () => {
             <br></br>
             <p1>CSE-AI Undergrad @IGDTUW</p1>
             <a href="https://www.linkedin.com/in/surbhi-sharma-5b4140245/" target="_blank">
-              <button>Connect on LinkedIn</button>
+              <button id="lin">Connect on LinkedIn</button>
             </a>
 
           </div>
@@ -29,7 +29,7 @@ const Contact = () => {
             <br></br>
             <p1>CSE-AI Undergrad @IGDTUW</p1>
             <a href="https://www.linkedin.com/in/harsheen-kaur-sood-2713691ab/" target="_blank">
-              <button>Connect on LinkedIn</button>
+              <button id="lin">Connect on LinkedIn</button>
             </a>
 
           </div>
@@ -41,7 +41,7 @@ const Contact = () => {
             <br></br>
             <p1>CSE-AI Undergrad @IGDTUW</p1>
             <a href="https://www.linkedin.com/in/priyanshi-chaudhary-8a025922a/" target="_blank">
-              <button>Connect on LinkedIn</button>
+              <button id="lin">Connect on LinkedIn</button>
             </a>
 
           </div>

@@ -17,7 +17,7 @@ const Home = () => {
           <Link to="/community" className="image-link">
             <img src="../images/community connect.png"></img>
           </Link>
-          <Link to="/stay-tuned" className="image-link">
+          <Link to="/service-aid" className="image-link">
             <img src="../images/service locator.png"></img>
           </Link>
         </div>

@@ -29,11 +29,7 @@ async function clickHandler(){
   return (
     <div className='map'>
        <Navbar></Navbar>
-      <div className='service_head'>
-       
-        <h4>Service and Aid Locator</h4>
-       
-      </div>
+      
       <h3> Locate reproductive health care services in your vicinity!</h3>
       <div className='loc_form'>
         <div className='gmap_input'>

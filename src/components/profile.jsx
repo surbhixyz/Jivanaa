@@ -77,11 +77,6 @@ const Profile = () => {
                         <fieldset>
                             <legend>Basic Information</legend>
 
-
-
-
-
-
                             <label htmlFor="name">Name:</label>
                             <input
                                 type="text"
@@ -158,17 +153,7 @@ const Profile = () => {
                             />
                             <label htmlFor="uterusNo">No</label>
 
-                            <input
-                                type="radio"
-                                id="uterusPreferNotToAnswer"
-                                name="uterusPresence"
-                                value="preferNotToAnswer"
-                                checked={formData.uterusPresence === 'preferNotToAnswer'}
-                                onChange={handleChange}
-                            />
-                            <label htmlFor="uterusPreferNotToAnswer">Prefer not to answer</label>
-
-
+    
 
                             <br></br>
                             <br></br>
@@ -259,15 +244,6 @@ const Profile = () => {
                                 />
                                 <label htmlFor="stiTestingNo">No</label>
 
-                                <input
-                                    type="radio"
-                                    id="stiTestingPreferNotToAnswer"
-                                    name="stiTestingHistory"
-                                    value="preferNotToAnswer"
-                                    checked={formData.stiTestingHistory === 'preferNotToAnswer'}
-                                    onChange={handleChange}
-                                />
-                                <label htmlFor="stiTestingPreferNotToAnswer">Prefer not to answer</label>
                             </div>
                             <br></br>
                             {formData.stiTestingHistory === 'yes' && (
@@ -306,15 +282,6 @@ const Profile = () => {
                                     />
                                     <label htmlFor="cervicalCancerScreeningNo">No</label>
 
-                                    <input
-                                        type="radio"
-                                        id="cervicalCancerScreeningPreferNotToAnswer"
-                                        name="cervicalCancerScreening"
-                                        value="preferNotToAnswer"
-                                        checked={formData.cervicalCancerScreening === 'preferNotToAnswer'}
-                                        onChange={handleChange}
-                                    />
-                                    <label htmlFor="cervicalCancerScreeningPreferNotToAnswer">Prefer not to answer</label>
                                 </div>
 
                                 {formData.cervicalCancerScreening === 'yes' && (
