@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../components/Login.css";
 import Home from "./Home.jsx";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
-import signIn from "./signIn.js";
+import { GoogleButton } from "react-google-button";
+import { UserAuth } from "./Auth/AuthContext.js";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [formData, setFormData] = useState({ Email: "", password: "" });
@@ -35,6 +37,24 @@ const Login = () => {
   if (isLoggedIn) {
     return <Home />;
   }
+
+  const { googleSignIn, user } = UserAuth();
+
+  const navigate = useNavigate();
+
+  const handleGoogleSignIn = async () => {
+    try {
+      await googleSignIn();
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    if (user != null) {
+      navigate("/home");
+    }
+  }, [user]);
 
   return (
     <div className="loginform">
@@ -77,8 +97,9 @@ const Login = () => {
       <br></br>
 
       <div className="bottomrow">
-        <p>- Or sign in with - </p>
-        <img src="../images/Google - Original.svg" alt="Google Logo"></img>
+        <div className="google-btn">
+          <GoogleButton onClick={handleGoogleSignIn} />
+        </div>
       </div>
     </div>
   );

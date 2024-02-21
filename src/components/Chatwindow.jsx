@@ -27,7 +27,20 @@ function Chatwindow() {
     },
   ]);
   const [isTyping, setIsTyping] = useState(false);
-  const container = useRef(null);
+  const chatContainerRef = useRef(null);
+
+  // Function to scroll to the bottom of the chat container
+  const scrollToBottom = () => {
+    if (chatContainerRef.current) {
+      chatContainerRef.current.scrollTop =
+        chatContainerRef.current.scrollHeight;
+    }
+  };
+
+  useEffect(() => {
+    // Auto-scroll to the bottom of the chat container when new messages are added
+    scrollToBottom();
+  }, [messages]);
 
   const handleSend = async (message) => {
     if (!message) {
@@ -39,8 +52,9 @@ function Chatwindow() {
       sender: "user",
     };
 
-    const newMessages = [...messages, newMessage];
-    setMessages(newMessages);
+    /*const newMessages = [...messages, newMessage];
+    setMessages(newMessages);*/
+    setMessages((messages) => [...messages, newMessage]); // Update messages state correctly
 
     setIsTyping(true);
 
@@ -56,11 +70,12 @@ function Chatwindow() {
         sender: "geminiAI",
       };
 
-      const newAIMessages = [...newMessages, aiMessage];
-      setMessages(newAIMessages);
+      /*const newAIMessages = [...newMessages, aiMessage];
+      setMessages(newAIMessages);*/
+
+      setMessages((messages) => [...messages, aiMessage]); // Update messages state correctly
 
       setIsTyping(false);
-      Scroll();
     } catch (error) {
       setIsTyping(false);
       console.error("generateContent error: ", error);
@@ -70,10 +85,10 @@ function Chatwindow() {
   return (
     <div className="chatwindow">
       <MainContainer className="MainContainer">
-        <ChatContainer className="ChatContainer" ref={container}>
+        <ChatContainer className="ChatContainer">
           <MessageList
             className="MessageList"
-            scrollBehavior="smooth"
+            ref={chatContainerRef}
             typingIndicator={
               isTyping ? <TypingIndicator content="GeminiAI is typing" /> : null
             }
@@ -97,7 +112,7 @@ function Chatwindow() {
           </button>
         </Link>
 
-        <Link to={"/"}>
+        <Link to={"/*"}>
           <button className="btn-chatbot" style={{ cursor: cursor }}>
             CONSULT DOCTOR
           </button>
