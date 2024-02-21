@@ -3,15 +3,15 @@ import EduHub from "./EduHub";
 import Navbar from "./Navbar";
 import { BrowserRouter } from "react-router-dom";
 import '../index.css'
-import LatLong from "./LatLong";
+import ServiceLocator from "./ServiceLocator";
 
 
 
 function App(){
     return (<div>
         <BrowserRouter>
-        {/* <EduHub></EduHub> */}
-     <LatLong></LatLong>
+       {/* <EduHub></EduHub> */}
+     <ServiceLocator></ServiceLocator>
        </BrowserRouter>
     </div>
     );
