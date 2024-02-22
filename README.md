@@ -21,7 +21,7 @@ The Universal Access Platform for Sexual and Reproductive Healthcare is a user-c
         2.Inside the .env file, add the following line:
           REACT_APP_MAP_API_KEY=YOUR_GOOGLE_CLOUD_API_KEY ( Replace YOUR_GOOGLE_CLOUD_API_KEY with your actual Google Cloud API key)
   
-        3.Next, visit the proxy server [here](https://cors-anywhere.herokuapp.com/corsdemo) and click on "Request temporary access to 
+        3.Next, visit the proxy server (https://cors-anywhere.herokuapp.com/corsdemo) and click on "Request temporary access to 
          the demo server" to grant access.
   
 ### 4. Donate and Get Involved
