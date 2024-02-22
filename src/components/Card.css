@@ -131,11 +131,8 @@
       }
    }
    .fullCard:hover{
-      #name{
-         color:rgba(236, 65, 154, 0.965);
-      }
-      #etc_text{
-         color:rgba(236, 65, 154, 0.965);
+      #name,#etc_text{
+         color:rgba(223, 227, 250, 0.965);
       }
    }
 }
