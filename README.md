@@ -15,11 +15,14 @@ The Universal Access Platform for Sexual and Reproductive Healthcare is a user-c
 
 ### 3. Service Locator
 - **Google Maps Integration:** A service locator enables users to find nearby healthcare services, enhancing accessibility.
-- For using the service locator the user needs to :
-        -Create a .env file at the root directory of your project using your preferred code editor.
-        -Inside the .env file, add the following line:
+-To enable the service locator feature, follow these steps: :
+  
+        1.Create a .env file at the root directory of your project using your preferred code editor.
+  
+        2.Inside the .env file, add the following line:
           REACT_APP_MAP_API_KEY=YOUR_GOOGLE_CLOUD_API_KEY ( Replace YOUR_GOOGLE_CLOUD_API_KEY with your actual Google Cloud API key)
-        -Next, visit the proxy server [here](https://cors-anywhere.herokuapp.com/corsdemo) and click on "Request temporary access to 
+  
+        3.Next, visit the proxy server [here](https://cors-anywhere.herokuapp.com/corsdemo) and click on "Request temporary access to 
          the demo server" to grant access.
   
 ### 4. Donate and Get Involved
