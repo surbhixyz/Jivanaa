@@ -103,32 +103,6 @@ h3{
    display: flex;
    flex-direction:row;
 }
-/* .row-container::-webkit-scrollbar {
-    width: 12px;
-  }
-
-  .row-container::-webkit-scrollbar-thumb {
-    background-color:  #ee6bf046;
-    border-radius: 6px;
-    border:1px solid white;
-  }
-
-  .row-container::-webkit-scrollbar-track {
-    background-color: #eac2dc;
-  }
-
-  .row-container::-moz-scrollbar {
-    width: 12px;
-  }
-
-  .row-container::-moz-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 6px;
-  }
-
-  .row-container::-moz-scrollbar-track {
-    background-color: #f1f1f1;
-  } */
 
 .article{
     margin:20px;
