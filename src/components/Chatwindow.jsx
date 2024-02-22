@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 
 import "./chatwindow.css";
 
-const API_KEY = "AIzaSyDSmjRqSfIJRwn8NU7pXxyGLoItOUvZwXQ";
+const API_KEY = process.env.REACT_APP_BOT_API_KEY;
 const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
