@@ -11,7 +11,7 @@ const MapContainer = ({ lat, lng, showmap }) => {
 
   const [selectedPlace, setSelectedPlace] = useState(null);
 
-  const apiKey = "AIzaSyBhCKGc0_cJu_1V_KU3DgWUQqqyxEJXDjA";
+  const apiKey = process.env.REACT_APP_MAP_API_KEY;
 
   const apiUrl = `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat},${lng}&radius=5000&type=doctor&keyword=gynecologist&key=${apiKey}`;
   fetch(apiUrl).then((response) => response.json());
@@ -53,7 +53,7 @@ const MapContainer = ({ lat, lng, showmap }) => {
 
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "AIzaSyBhCKGc0_cJu_1V_KU3DgWUQqqyxEJXDjA",
+    googleMapsApiKey: process.env.REACT_APP_MAP_API_KEY;
   });
 
   return isLoaded && showmap ? (
