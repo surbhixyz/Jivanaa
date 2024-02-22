@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../components/SignUp.css";
 import Login from "./Login.jsx";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
 import { GoogleButton } from "react-google-button";
+import { UserAuth } from "./Auth/AuthContext.js";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -46,66 +48,81 @@ const SignUp = () => {
     return <Login />;
   }
 
-return(
-<div className="loginform">
-  <div className="topbuttons">
-    <button id="signup">SIGN UP</button>
-    <Link to="/login">
-      <button id="signin">SIGN IN</button>
-    </Link>
-  </div>
+  const { googleSignIn, user } = UserAuth();
 
-  <form onSubmit={submitHandler}>
-    <label htmlFor="email" id="white-txt">
-      Email
-    </label>
-    <input
-      type="text"
-      placeholder="Enter Email"
-      name="email"
-      onChange={changeHandler}
-      value={formData.email}
-    />
+  const navigate = useNavigate();
 
-    <label htmlFor="password" id="white-txt">
-      Password
-    </label>
-    <input
-      type="password"
-      placeholder="Enter Password"
-      name="password"
-      onChange={changeHandler}
-      value={formData.password}
-    />
+  const handleGoogleSignIn = async () => {
+    try {
+      await googleSignIn();
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
-    <label htmlFor="confirmPassword" id="white-txt">
-      Confirm Password
-    </label>
-    <input
-      type="password"
-      placeholder="Confirm Password"
-      name="confirmPassword"
-      onChange={changeHandler}
-      value={formData.confirmPassword}
-    />
+  useEffect(() => {
+    if (user != null) {
+      navigate("/home");
+    }
+  }, [user]);
 
-    <button id="submit" type="submit">
-      SIGN UP
-    </button>
-  </form>
+  return (
+    <div className="full">
+      <div className="loginform">
+        <div className="topbuttons">
+          <button id="signup">SIGN UP</button>
+          <Link to="/login">
+            <button id="signin">SIGN IN</button>
+          </Link>
+        </div>
 
-  <div className="bottomrow">
-    <p>- Or sign up with - </p>
-    <br />
-    <img src="../images/Google - Original.svg" alt="Google Logo" />
-  </div>
-</div>
-);
-}
+        <form onSubmit={submitHandler}>
+          <label htmlFor="email" id="white-txt">
+            Email
+          </label>
+          <input
+            type="text"
+            placeholder="Enter Email"
+            name="email"
+            onChange={changeHandler}
+            value={formData.email}
+          />
+          <label htmlFor="password" id="white-txt">
+            Password
+          </label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="password"
+            onChange={changeHandler}
+            value={formData.password}
+          />
+          <label htmlFor="confirmPassword" id="white-txt">
+            Confirm Password
+          </label>
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            name="confirmPassword"
+            onChange={changeHandler}
+            value={formData.confirmPassword}
+          />{" "}
+          <button id="submit_btn" type="submit">
+            SIGN UP
+          </button>
+        </form>
 
+        <br></br>
 
-
-
+        <div className="bottomrow">
+          <div className="google-btn">
+            <GoogleButton onClick={handleGoogleSignIn} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 //   return (
 //     <div className="loginform">
@@ -185,7 +202,7 @@ return(
 //           SIGN UP
 //         </button>
 //       </form>
-      
+
 //       <div className="bottomrow">
 //         <p>- Or sign up with - </p>
 //         <br></br>

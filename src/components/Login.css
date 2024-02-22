@@ -83,7 +83,7 @@ input {
   margin-top: 8%;
   margin-bottom: 8%;
   padding: 15px;
-  width: 106.5%;
+  width: 100.5% !important;
   color: #ffffff;
   border: none;
   cursor: pointer;

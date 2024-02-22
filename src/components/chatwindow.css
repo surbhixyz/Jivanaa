@@ -42,8 +42,9 @@
 /* Target the MessageList component */
 .MessageList {
   /* Add your custom styles here */
-  background-image: url("/public/images/bg-image.png");
+  /*background-image: url("/public/images/bg-image.png");*/
   background-position: 10%;
+  padding: 10px;
 }
 
 /* Target the MessageInput component */
