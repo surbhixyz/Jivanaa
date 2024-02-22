@@ -8,6 +8,10 @@ The Universal Access Platform for Sexual and Reproductive Healthcare is a user-c
 
 ### 1. Personalized Chatbot
 - **Gemini AI API Integration:** A personalized chatbot powered by the Gemini AI API provides tailored sex education and contraceptive information.
+        1.Create a .env file at the root directory of your project using your preferred code editor.
+
+        2.Inside the .env file, add the following line:
+          REACT_APP_BOT_API_KEY=YOUR_GEMINI_AI_API_KEY ( Replace YOUR_GOOGLE_CLOUD_API_KEY with your actual Gemini AI Api key)
 
 ### 2. Educational Hub
 - **Comprehensive Information:** An educational hub covering government schemes, crisis helplines, myth-busting, and STI testing information.
