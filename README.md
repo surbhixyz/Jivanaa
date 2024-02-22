@@ -14,8 +14,7 @@ The Universal Access Platform for Sexual and Reproductive Healthcare is a user-c
 - **Multimedia Content:** Enriched with articles, videos, and podcasts for a diverse and engaging learning experience.
 
 ### 3. Service Locator
-- **Google Maps Integration:** A service locator enables users to find nearby healthcare services, enhancing accessibility.
--To enable the service locator feature, follow these steps: :
+- **Google Maps Integration:** A service locator enables users to find nearby healthcare services, enhancing accessibility.To enable the service locator feature, follow these steps: :
   
         1.Create a .env file at the root directory of your project using your preferred code editor.
   
