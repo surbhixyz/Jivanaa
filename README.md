@@ -36,6 +36,7 @@ The Universal Access Platform for Sexual and Reproductive Healthcare is a user-c
 - **Anonymous Sharing:** A supportive community forum allowing users to share experiences and reactions anonymously.
 
 ### Firebase Deployment 
+---
 We've deployed our website on Firebase, and you can access it at the following Firebase App Link: (https://jivanaa-d0bda.web.app/)
    
     For using the Service Locator , you need to visit the proxy server : (https://cors-anywhere.herokuapp.com/corsdemo) and click on "Request temporary access to the demo server" to grant access.
