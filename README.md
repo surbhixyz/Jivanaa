@@ -1,10 +1,5 @@
 # **Jivanaa - Universal Access Platform for Sexual and Reproductive Healthcare**
 
-### Firebase Deployment 
-We've deployed our website on Firebase, and you can access it at the following Firebase App Link: (https://jivanaa-d0bda.web.app/)
-   
-    For using the Service Locator , you need to visit the proxy server : (https://cors-anywhere.herokuapp.com/corsdemo) and click on "Request temporary access to the demo server" to grant access.
-
 ## Project Overview
 The Universal Access Platform for Sexual and Reproductive Healthcare is a user-centric initiative aimed at providing inclusive access to vital healthcare services. The platform encompasses a wide range of features to address the diverse needs of individuals, irrespective of age or gender. Leveraging advanced technologies such as the Gemini AI API, Google Cloud, Firebase, and Google Maps, our project seeks to revolutionize the way sexual and reproductive healthcare is approached.
 
@@ -40,6 +35,11 @@ The Universal Access Platform for Sexual and Reproductive Healthcare is a user-c
 ### 6. Community Forum
 - **Anonymous Sharing:** A supportive community forum allowing users to share experiences and reactions anonymously.
 
+### Firebase Deployment 
+We've deployed our website on Firebase, and you can access it at the following Firebase App Link: (https://jivanaa-d0bda.web.app/)
+   
+    For using the Service Locator , you need to visit the proxy server : (https://cors-anywhere.herokuapp.com/corsdemo) and click on "Request temporary access to the demo server" to grant access.
+    
 ## Technologies Used
 
 - **Gemini AI API:** Powers the personalized chatbot for tailored sex education.
