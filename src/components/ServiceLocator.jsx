@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import MapContainer from './MapContainer'; // Assuming you have a Map component
+import MapContainer from './MapContainer'; 
 import "./ServiceLocator.css";
 import Navbar from './Navbar';
 
