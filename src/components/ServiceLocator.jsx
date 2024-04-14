@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import MapContainer from './MapContainer'; // Assuming you have a Map component
 import "./ServiceLocator.css";
 import Navbar from './Navbar';
@@ -11,19 +11,17 @@ const ServiceLocator = () => {
 
    const[lng,setlng]=useState('');
 
-async function gotlocation(position){
-
+const gotlocation= async (position) =>{
     setlat(position.coords.latitude);
     setlng(position.coords.longitude);
     setshowmap(true);
-
 }
-async function failedtoget(){
+const failedToGet = (error) => {
     console.log("error");
 }
 
-async function clickHandler(){
-  navigator.geolocation.getCurrentPosition(gotlocation,failedtoget);
+const clickHandler = () => {
+  navigator.geolocation.getCurrentPosition(gotlocation,failedToGet);
 }
 
   return (
@@ -49,8 +47,3 @@ async function clickHandler(){
 };
 
 export default ServiceLocator;
-
-
-
-
-
