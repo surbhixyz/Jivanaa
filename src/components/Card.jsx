@@ -6,7 +6,7 @@ const Card = ({id,Name,Desc,imagesrc,vlink,Lang,cardinfo,Helpline}) => {
   return (
     <div className='whole_card'>
     {cardinfo  ==='Government Policies & Schemes' ?(
-       <a id="gov_anch" href={vlink}><div className="fullCard">
+       <a id="gov_anch" href={vlink} target='blank'><div className="fullCard">
 
       <div id='img_text'>
       <img src={imagesrc}/>
@@ -27,7 +27,7 @@ const Card = ({id,Name,Desc,imagesrc,vlink,Lang,cardinfo,Helpline}) => {
     ):cardinfo  ==='Myth Buster'?(
     
     <div className='myth'>
-       <a id="myth_anch" href={vlink}><div className="fullCard">
+       <a id="myth_anch" href={vlink} target='blank'><div className="fullCard">
         
       <div id='img_myth'>
        <span id='name'>{Name}</span>
@@ -41,7 +41,7 @@ const Card = ({id,Name,Desc,imagesrc,vlink,Lang,cardinfo,Helpline}) => {
     </div>
     
     ):(
-    <a id="anch" href={vlink}><div className="fullCard">
+    <a id="anch" href={vlink} target='blank'><div className="fullCard">
        <span id='name'>{Name}</span>
        <img src={imagesrc}/>
         Language :{Lang}
