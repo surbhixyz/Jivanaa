@@ -65,7 +65,7 @@ export const  Lgbt_data_vids= [
         id:9,
         Name:"STIs FOR TRANS MEN",
         imagesrc:"../images/Lgbt.png",
-        vlink:"https://www.youtube.com/https://www.youtube.com/watch?v=W8H2nr9ab2Y?v=gWFLnkE9rh4",
+        vlink:"https://www.youtube.com/watch?v=FM_10smu7Dk",
         Lang:"English"
     
     },
