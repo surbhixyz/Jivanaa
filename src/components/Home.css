@@ -1,0 +1,56 @@
+body {
+  overflow: hidden;
+}
+
+/* .home-full{
+    background-image: url('/public/images/I\ love\ purple\ and\ pink_.jpg');
+    height: 100vh;
+} */
+
+.row-container {
+  position: absolute;
+  left: 2.5%;
+  width: 100vw;
+}
+
+.row1,
+.row2 {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5%;
+  margin: 1.7%;
+  flex-wrap: wrap;
+}
+
+.row1 img,
+.row2 img {
+  height: 220px;
+  width: 380px;
+  cursor: pointer;
+}
+
+.image-link img {
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.image-link:hover img {
+  transform: scale(0.9);
+  opacity: 0.45;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+
+  .row1 img,
+  .row2 img {
+    margin: 1%;
+  }
+
+  .row-container {
+    position: absolute;
+    left: 17%;
+  }
+}

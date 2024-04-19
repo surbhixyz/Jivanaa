@@ -1,0 +1,53 @@
+.chatwindow {
+  margin-left: 45px;
+  margin-right: 45px;
+  margin-top: 4%;
+  height: 78vh;
+}
+
+.btn-chatbot-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  gap: 5%;
+}
+
+.btn-chatbot {
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 15px 30px;
+  background: linear-gradient(97deg, #bb6bd9 0%, #6e26cd 54.67%, #4c0aa3 100%);
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  width: 200px;
+}
+
+/* Target the MainContainer component */
+.MainContainer {
+  /* Add your custom styles here */
+  border: 2px solid #47118e;
+  border-radius: 15px;
+  display: flex;
+  height: 50vh;
+}
+
+/* Target the ChatContainer component */
+.ChatContainer {
+  /* Add your custom styles here */
+  flex: 1; /* Expand to fill available space */
+  overflow: auto;
+}
+
+/* Target the MessageList component */
+.MessageList {
+  /* Add your custom styles here */
+  /*background-image: url("/public/images/bg-image.png");*/
+  background-position: 10%;
+  padding: 10px;
+}
+
+/* Target the MessageInput component */
+.MessageInput {
+  /* Add your custom styles here */
+}

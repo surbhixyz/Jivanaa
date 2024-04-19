@@ -1,0 +1,79 @@
+.askform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btns{
+    width: 100%;
+
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 2%;
+
+}
+
+.btns button {
+    padding: 2%;
+    margin: 1%;
+    width: 160px;
+    height: 50px;
+    border-radius: 7px;
+    border: 2px solid rgba(46, 2, 73, 0.6);
+    background-color: transparent;
+    font-size: 17px;
+    color: rgba(46, 2, 73, 1);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btns button.selected {
+    background-color: #A10F54;
+    color: #fff;
+}
+
+textarea {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    max-height: 210px;
+    max-width: 500px;
+    border: solid 2px #A10F54;
+    padding: 1.5%;
+    margin-left: 10%;
+    background-color: rgba(85, 100, 87, 0.1);
+    font-family: poppins;
+}
+
+button[type="submit"] {
+    width: 190px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #A10F54;
+    color: #EEEEEE;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    font-family: poppins;
+    margin-left: 33%;
+}
+
+
+.askform p{
+    font-size: small;
+    color: black;
+}
+
+label{
+    font-weight: bold;
+}
+
+
+.askform ::placeholder{
+    color:black;
+} 
