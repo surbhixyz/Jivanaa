@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { GoogleGenerativeAI } from "@google/generative-ai";
+//import { GoogleGenerativeAI } from "@google/generative-ai";
 import "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
 import {
   MainContainer,
@@ -12,16 +12,19 @@ import {
 import { Link } from "react-router-dom";
 
 import "./chatwindow.css";
+import axios from "axios";
 
-const API_KEY = process.env.REACT_APP_BOT_API_KEY;
+//const API_KEY = process.env.REACT_APP_BOT_API_KEY;
+/*const API_KEY = "AIzaSyD1jDt4Xr1anWMcQVMram9Wqz8l-pYX1y4";
 const genAI = new GoogleGenerativeAI(API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+const model = genAI.getGenerativeModel({ model: "gemini-pro" });*/
 
 function Chatwindow() {
   const [cursor, setCursor] = useState("pointer");
   const [messages, setMessages] = useState([
     {
-      message: "Hello, I'm GeminiAI! Ask me anything!",
+      message:
+        "Hello! 👋 I'm Jiva, your friendly guide to the world of sexual and reproductive health.  I'm here to provide information, answer your questions, and offer support in a safe and inclusive space. What can I help you with today?",
       sentTime: "just now",
       sender: "GeminiAI",
     },
@@ -59,9 +62,12 @@ function Chatwindow() {
     setIsTyping(true);
 
     try {
-      const result = await model.generateContent(message);
+      //const result = await model.generateContent(message);
+      const result = await axios.post("/generate", {
+        user_input: message,
+      });
       console.log("AI Response Result:", result); // Debugging
-      const text = result.response.text();
+      const text = result.data.generated_text;
       console.log("AI Response Text:", text); // Debugging
 
       const aiMessage = {
