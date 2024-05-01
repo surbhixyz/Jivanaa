@@ -26,7 +26,7 @@ const Home = () => {
           <Link to="/stay-tuned" className="image-link">
             <img src="../images/reminder.png"></img>
           </Link>
-          <Link to="/stay-tuned" className="image-link">
+          <Link to="/virtual-consult" className="image-link">
             <img src="../images/virtual health consult.png"></img>
           </Link>
           <Link to="/chatbot" className="image-link">
