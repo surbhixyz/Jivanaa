@@ -1,49 +1,46 @@
-.app-container{
-    height: 100vh;
-    background-image: url('/public/images/I love purple and pink_.jpg');
-    backdrop-filter: blur(10px); 
+.app-container {
+  height: 100vh;
+  background-image: url("/public/images/pinkgd.jpg");
+  backdrop-filter: blur(2px);
   background-size: cover;
-
 }
 
-.content{
-    height: 100%;
-    position: relative;
-    background: rgba(255, 255, 255, 0.1); 
-  backdrop-filter: blur(5px); 
-
+.content {
+  height: 100%;
+  position: relative;
+  /*background: rgba(255, 255, 255, 0.1);*/
+  /*backdrop-filter: blur(5px);*/
 }
 
-.landing-txt{
+.landing-txt {
+  position: relative;
+  top: 30%;
+  left: 5%;
 
+  h1 {
     position: relative;
-    top: 30%;
-    left:5%;
+    left: 8%;
+    background: linear-gradient(360deg, #733ea8 20%, #dedae0 93.49%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
-    h1{
-        position: relative;
-        left: 8%;
-        background: linear-gradient(360deg, #8752cd 34.9%, #dedae0 93.49%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    
-      font-family: Poppins;
-      font-size: 130px;
-      font-style: normal;
-      font-weight: 800;
-      line-height: normal;
-      }
-    
-      p {
-        position: relative;
-        right: 4%;
-        color: #000;
-        font-family: Poppins;
-        font-size: 23px;
-        font-style: italic;
-        font-weight: 300;
-        line-height: normal;
-        color: wheat;
-      }
+    font-family: Poppins;
+    font-size: 130px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  p {
+    position: relative;
+    right: 4%;
+    color: #000;
+    font-family: Poppins;
+    font-size: 23px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+    color: rgb(255, 255, 255);
+  }
 }

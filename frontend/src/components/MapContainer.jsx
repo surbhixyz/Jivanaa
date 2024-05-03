@@ -54,7 +54,7 @@ const MapContainer = ({ lat, lng, showmap }) => {
 
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: process.env.REACT_APP_MAP_API_KEY,
+    googleMapsApiKey: "AIzaSyBhCKGc0_cJu_1V_KU3DgWUQqqyxEJXDjA",
   });
 
   return isLoaded && showmap ? (

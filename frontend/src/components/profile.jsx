@@ -425,7 +425,7 @@ const Profile = () => {
                 value={formData.shortNote}
                 onChange={handleChange}
                 rows="4"
-                cols="50"
+                cols="40"
               ></textarea>
             </fieldset>
           </div>

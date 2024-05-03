@@ -14,6 +14,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Chatbot from "./components/Chatbot.jsx";
 import Community from "./components/Community.jsx";
+import Virtual_Consult from "./components/Virtual_Consult.jsx";
 import AboutUs from "./components/AboutUs.jsx";
 import Contact from "./components/Contact.jsx";
 import { AuthContextProvider } from "./components/Auth/AuthContext.js";
@@ -38,6 +39,7 @@ const AppRouter = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/home" element={<Home />} />
           <Route path="/stay-tuned" element={<StayTuned />} />
+          <Route path="/virtual-consult" element={<Virtual_Consult />} />
           <Route path="/service-aid" element={<ServiceLocator />} />
           <Route path="/chatbot" element={<Chatbot />} />
           <Route path="/community" element={<Community />} />

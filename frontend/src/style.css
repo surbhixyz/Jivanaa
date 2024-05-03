@@ -5,7 +5,8 @@
 
 body {
   /* background-image: url('/public/images/bg-image.png'); */
-  background-image: url("/public/images/image.png");
+  /*background-image: url("/public/images/image.png");*/
+  background-image: url("/public/images/bg_light_blue_gradient.jpg");
   backdrop-filter: blur(10px);
   background-size: cover;
 }
@@ -53,28 +54,25 @@ body {
   font-family: Poppins;
 }
 
-
-.content{
-
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
 
   background: linear-gradient(180deg, #2d0660 34.9%, #bb6bd9 93.49%);
-  h1{
-    background: linear-gradient(180deg, #2D0660 34.9%, #BB6BD9 93.49%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  h1 {
+    background: linear-gradient(180deg, #2d0660 34.9%, #bb6bd9 93.49%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
-  font-family: Poppins;
-  font-size: 130px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
-
+    font-family: Poppins;
+    font-size: 130px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
 
   p {
     color: #000;
@@ -84,5 +82,4 @@ body {
     font-weight: 300;
     line-height: normal;
   }
-
 }

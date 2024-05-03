@@ -1,0 +1,84 @@
+* {
+  font-family: "Montserrat";
+  padding: 0px;
+}
+.consult_container {
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tagline {
+  font-size: 17.5px;
+  text-align: center;
+  font-weight: 550;
+  margin-bottom: 3%;
+  color: rgb(20, 32, 121);
+}
+.cons_card {
+  width: 70%;
+  background-color: white;
+  border-radius: 7px;
+  margin-bottom: 2%;
+  padding: 15px;
+}
+
+.consult_img {
+  height: 100px;
+  width: 120px;
+  border-radius: 50%;
+  margin-left: 1%;
+}
+.card-text {
+  font-size: 13px;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+.card-title {
+  font-size: 14px;
+  color: grey;
+  font-weight: 500;
+}
+.consult_text {
+  padding: 5px;
+  font-size: 12px;
+  width: 60%;
+}
+.side-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+.Sep {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10%;
+}
+.consult_btn {
+  width: 30%;
+  margin: 13px;
+  margin-top: 1.5%;
+  color: rgb(28, 28, 249);
+  border: 1px solid rgb(118, 118, 249);
+  border-radius: 10px;
+  padding: 6px;
+  font-weight: 500;
+  background-color: white;
+  a {
+    text-decoration: none;
+  }
+}
+.consult_btn:hover {
+  box-shadow: 0px 0px 2px blue;
+}
+
+@media only screen and (max-width: 768px) {
+  .Sep {
+    flex-wrap: wrap;
+  }
+}

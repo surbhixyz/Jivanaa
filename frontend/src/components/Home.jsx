@@ -4,9 +4,9 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-  function handlClick() { }
+  function handlClick() {}
   return (
-    <div className='home-full'>
+    <div className="home-full">
       <Navbar />
 
       <div className="row-container">
@@ -26,7 +26,7 @@ const Home = () => {
           <Link to="/stay-tuned" className="image-link">
             <img src="../images/reminder.png"></img>
           </Link>
-          <Link to="/stay-tuned" className="image-link">
+          <Link to="/virtual-consult" className="image-link">
             <img src="../images/virtual health consult.png"></img>
           </Link>
           <Link to="/chatbot" className="image-link">
@@ -34,7 +34,6 @@ const Home = () => {
           </Link>
         </div>
       </div>
-
     </div>
   );
 };
