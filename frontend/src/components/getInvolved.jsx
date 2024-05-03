@@ -23,7 +23,10 @@ const GetInvolved = () => {
             lasting impact on the health and lives of individuals seeking
             guidance.
           </p1>
-          <a href="https://www.rahfoundation.org/become-volunteer.php">
+          <a
+            href="https://www.rahfoundation.org/become-volunteer.php"
+            target="blank1"
+          >
             <button>Know More</button>
           </a>
         </div>
@@ -35,7 +38,7 @@ const GetInvolved = () => {
             Individuals, contribute to the causes you believe in, and let's
             collectively build a healthier future.
           </p1>
-          <a href="https://www.rahfoundation.org/payment.php">
+          <a href="https://www.rahfoundation.org/payment.php" target="blank2">
             <button>Know More</button>
           </a>
         </div>
@@ -47,7 +50,10 @@ const GetInvolved = () => {
             that matter. Share your insights, conduct workshops, and inspire
             positive change in healthcare practices.
           </p1>
-          <a href="https://www.rahfoundation.org/become-volunteer.php">
+          <a
+            href="https://www.rahfoundation.org/become-volunteer.php"
+            target="blank3"
+          >
             <button>Know More</button>
           </a>
         </div>

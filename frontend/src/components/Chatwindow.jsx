@@ -103,7 +103,7 @@ function Chatwindow() {
           </button>
         </Link>
 
-        <Link to={"/stay-tuned"}>
+        <Link to={"/virtual-consult"}>
           <button className="btn-chatbot" style={{ cursor: cursor }}>
             CONSULT DOCTOR
           </button>
