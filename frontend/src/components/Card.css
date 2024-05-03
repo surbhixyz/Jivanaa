@@ -1,0 +1,149 @@
+
+#anch{
+   text-decoration:none;
+   color:black;
+   font-family: 'Poppins';
+   font-size: 15px;
+   text-align: center; 
+   
+   .fullCard{
+      border: 1px solid white;
+      border-radius: 10px;
+      width: 260px;
+      height: 320px;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      background:linear-gradient(#ff71c962,rgba(255, 255, 255, 0.582));
+      justify-content: space-around;
+      align-items: center;
+      margin:8px;
+      img{
+         height: 100px;
+         width:100px;
+      }
+      #name{
+         font-weight: 600;
+         font-size: 16px;
+         margin-top: 12px;
+         text-shadow: 10px 10px 20px rgb(241, 63, 152);
+      }
+   }
+}
+#anch:hover{
+   opacity: 60%;
+}
+#gov_anch{
+   text-decoration:none;
+   color:black;
+   font-family: 'Poppins';
+   font-size: 15px;
+   text-align: center; 
+    
+   .fullCard{
+      border: 2px solid white;
+      border-radius: 10px;
+      width: 280px;
+      height: 395px;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      background:linear-gradient(#ff71c962,rgba(255, 255, 255, 0.582));
+      justify-content: space-around;
+      align-items: center;
+      margin:8px;
+     
+      
+      #desc{
+         margin-top:5px;
+         font-weight: 500;
+         color:rgb(9, 6, 26);
+         text-shadow: 0px 0px 20px rgb(255, 143, 248);
+      }
+      #img_text{
+         display: flex;
+         flex-direction: row;
+         justify-content: flex-start;
+         align-items: flex-start;
+         gap:1px;
+      }
+      img{
+         height:100px;
+         width:100px;
+      }
+      #name{
+         font-weight: 600;
+         margin-top: 8px;
+         font-size: 16px;
+         text-shadow: 10px 10px 20px rgb(241, 63, 152);
+      }
+   }
+}
+#gov_anch:hover{
+   opacity: 60%;
+}
+
+#myth_anch{
+
+    font-size: 15px;
+    text-align: center; 
+    font-family: 'Poppins';
+    color:black;
+    text-decoration: none; 
+
+   .fullCard{
+      border: 2px solid white;
+      border-radius: 7%;
+      width: 260px;
+      height: 395px;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      background:linear-gradient(#ff71c962,rgba(255, 255, 255, 0.582));
+      justify-content: space-around;
+      align-items: center;
+      margin:8px;
+     
+      img{
+         border: 1px solid white;
+         border-radius: 50%;
+         height:120px;
+         position: relative;
+         z-index: 3;
+      }
+      #name{
+         font-weight: 600;
+         text-shadow: 10px 10px 20px rgb(241, 63, 152);
+         position: relative;
+         z-index: 100; 
+    
+      }
+      #img_myth{
+         border:4px solid rgb(247, 232, 244);
+         border-radius:10% ;
+         padding: 9px;
+      }
+
+      #etc_text{
+         font-family: 'Poppins';
+         font-weight: 600;
+         color: rgb(72, 25, 98);
+      }
+   }
+   .fullCard:hover{
+      #name,#etc_text{
+         color:rgba(223, 227, 250, 0.965);
+      }
+   }
+}
+/* .content{
+   display: flex;
+   flex-direction:column;
+   justify-content:flex-start;
+   align-items:center;
+   height:136px;
+   width:200px;
+   a{
+      margin-bottom:none;
+   }
+} */

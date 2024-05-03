@@ -1,0 +1,12 @@
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    flex-wrap: nowrap;
+    margin: 20 px; 
+    width: 100%;
+  }
+  .custom-carousel{
+    transition: transform 0.5s ease-in-out; /* Adjust the duration and easing function as needed */
+  }
+  
